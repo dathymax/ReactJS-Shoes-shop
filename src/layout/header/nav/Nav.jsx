@@ -1,5 +1,8 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { IoSearch } from "react-icons/io5";
+import { FiShoppingCart } from "react-icons/fi";
+import { LuUser2 } from "react-icons/lu";
 
 const LINKS = [
 	{
@@ -21,10 +24,11 @@ const LINKS = [
 ];
 
 const HeaderNavigation = () => {
-	const { pathname } = useLocation();
+    const navigate = useNavigate();
+    const { pathname } = useLocation();
 
 	return (
-		<nav className="grid grid-cols-12 container m-auto gap-3 sticky top-10 my-4">
+		<nav className="grid grid-cols-12 container m-auto gap-3 sticky top-10 py-7">
 			<ul className="col-span-5 flex items-center gap-10">
 				{LINKS.map((link) => (
 					<li
@@ -40,8 +44,14 @@ const HeaderNavigation = () => {
 				))}
 			</ul>
 			<p className="col-span-2 text-center text-blue-600 text-3xl font-bold">
-				Clothes
-			</p>
+				Shoes
+            </p>
+            
+            <ul className="col-span-5 flex items-center gap-10 justify-end">
+				<li><IoSearch className="text-2xl cursor-pointer"/></li>
+				<li onClick={() => navigate("/cart")}><FiShoppingCart className="text-2xl cursor-pointer"/></li>
+				<li><LuUser2 className="text-2xl cursor-pointer"/></li>
+			</ul>
 		</nav>
 	);
 };

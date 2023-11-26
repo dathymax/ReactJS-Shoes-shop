@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const LayoutContent = () => {
 	return (
-		<section className="container m-auto my-10">
+		<section className="mb-20">
 			<Outlet />
 		</section>
 	);

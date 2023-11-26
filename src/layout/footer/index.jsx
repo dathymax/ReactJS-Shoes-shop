@@ -2,7 +2,7 @@ import React from "react";
 
 const LayoutFooter = () => {
 	return (
-		<footer className="grid grid-cols-12 gap-3 container m-auto">
+		<footer className="grid grid-cols-12 gap-3 container m-auto pt-5" style={{borderTop: "1px solid lightgray"}}>
 			<ul className="col-span-3">
 				<li className="uppercase font-bold mb-5">Tổng đài hỗ trợ</li>
 				<li className="mb-3">
@@ -40,8 +40,8 @@ const LayoutFooter = () => {
 			<ul className="col-span-3">
 				<p className="text-blue-600 text-4xl font-bold mb-5">Clothes</p>
 				<p>
-					Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho
-					hàng triệu người tiêu dùng Việt. Hãy cùng Clothes hướng đến
+					Hướng đến mục tiêu mang lại niềm vui sở hữu những đôi giày mới mỗi ngày cho
+					hàng triệu người tiêu dùng Việt. Hãy cùng Shoes hướng đến
 					một cuộc sống năng động, tích cực hơn.
 				</p>
 			</ul>
