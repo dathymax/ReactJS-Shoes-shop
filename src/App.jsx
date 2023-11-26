@@ -1,8 +1,18 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import MainLayout from "./layout";
 import HomePage from "./pages/home";
+import { useEffect } from "react";
 
 function App() {
+    const navigate = useNavigate();
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        if (pathname === "/") {
+            navigate("/home");
+        }
+    }, [pathname])
+
 	return (
 		<Routes>
 			<Route element={<MainLayout />}>

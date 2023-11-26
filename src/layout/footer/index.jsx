@@ -21,20 +21,20 @@ const LayoutFooter = () => {
 
 			<ul className="col-span-3">
 				<li className="uppercase font-bold mb-5">Về Clothes</li>
-				<li className="mb-3 font-medium">Giới thiệu</li>
-				<li className="mb-3 font-medium">Liên hệ</li>
-				<li className="mb-3 font-medium">Tuyển dụng</li>
-				<li className="mb-3 font-medium">Tin tức</li>
-				<li className="mb-3 font-medium">Hệ thống cửa hàng</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Giới thiệu</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Liên hệ</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Tuyển dụng</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Tin tức</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Hệ thống cửa hàng</li>
 			</ul>
 
 			<ul className="col-span-3">
 				<li className="uppercase font-bold mb-5">
 					Chăm sóc khách hàng
 				</li>
-				<li className="mb-3 font-medium">Chính sách đổi trả</li>
-				<li className="mb-3 font-medium">Chính sách bảo hành</li>
-				<li className="mb-3 font-medium">Chính sách hoàn tiền</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Chính sách đổi trả</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Chính sách bảo hành</li>
+				<li className="mb-3 font-medium cursor-pointer hover:text-blue-500 transition-all">Chính sách hoàn tiền</li>
 			</ul>
 
 			<ul className="col-span-3">
